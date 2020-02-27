@@ -35,7 +35,7 @@ body {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
 
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 
   background: linear-gradient(rgb(0, 0, 0), rgb(3, 11, 15));
 }
@@ -142,7 +142,7 @@ body {
   flex-wrap: wrap;
 
   font-family: "RobotoReg";
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .card {
@@ -162,6 +162,9 @@ body {
   display: flex;
   justify-self: center;
   align-self: center;
+
+  text-transform: uppercase;
+  font-size: 36px;
 }
 .card__thumbnail {
   height: 100%;
@@ -226,6 +229,8 @@ body {
 
   font-family: "RobotoReg";
   font-size: 36px;
+
+  padding: 30px;
 }
 
 .contact__details {

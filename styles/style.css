@@ -44,7 +44,7 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[20];
       grid-template-columns: repeat(20, 1fr);
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(#030b0f));
   background: linear-gradient(black, #030b0f);
 }
@@ -185,7 +185,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: "RobotoReg";
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .card {
@@ -211,6 +211,8 @@ body {
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
+  text-transform: uppercase;
+  font-size: 36px;
 }
 
 .card__thumbnail {
@@ -297,6 +299,7 @@ body {
       align-self: center;
   font-family: "RobotoReg";
   font-size: 36px;
+  padding: 30px;
 }
 
 .contact__details {
