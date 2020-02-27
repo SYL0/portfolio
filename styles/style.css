@@ -10,79 +10,49 @@
   src: url("/fonts/Orbitron-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "RobotoReg";
+  src: url("/fonts/Roboto-Regular.ttf");
+}
+
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body {
+  display: -ms-grid;
+  display: grid;
+  min-height: 720px;
+  width: 100%;
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+}
+
+.nav {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 20;
+  grid-column: 1/21;
+  height: 100px;
+  background: #020708;
   font-family: "Orbitron";
-  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+  letter-spacing: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#030b0f));
+  background: linear-gradient(black, #030b0f);
 }
 
-.clear {
-  clear: both;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 3.6rem;
-  padding: 5rem 0rem;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 2.4rem;
-}
-
-h3 {
-  font-size: 2.8rem;
-}
-
-button {
-  font-size: 1.8rem;
-}
-
-nav {
-  background-color: #02141a;
-  color: white;
-  padding: 3rem;
-}
-
-nav h1 {
-  float: left;
-}
-
-nav ul {
-  float: right;
-  list-style: none;
-}
-
-nav li {
-  float: left;
-  margin: 0rem 3rem;
-}
-
-.hero {
-  background: url("/img/8a4jrOU.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 1080px;
-  text-align: center;
-  color: white;
-  padding-top: 15rem;
-  text-shadow: 3px 3px 3px black;
-}
-
-.hero button {
-  margin-top: 4rem;
-  padding: 1rem 4rem;
-  background: #0079b6;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.project__cards {
+.nav__logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,44 +62,282 @@ nav li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  font-size: 48px;
+  color: white;
+  text-decoration: none;
 }
 
-.project__card--1 {
+.nav__btns {
+  -ms-grid-column: 12;
+  -ms-grid-column-span: 8;
+  grid-column: 12/20;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__btn {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav__btn--contact {
+  height: 30px;
+  width: 140px;
+  padding: 5px 10px;
+  background-color: #0079b6;
+  border-radius: 50px;
+}
+
+.header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 20;
+  grid-column: 1/21;
+  height: 720px;
+  background: url("/img/8a4jrOU.png");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 4px;
+}
+
+.hero {
+  color: white;
+  font-family: "Orbitron";
+  text-align: center;
+  text-shadow: 1px 1px 5px #00958e;
+}
+
+.hero__title {
+  font-size: 90px;
+}
+
+.hero__subtitle {
+  font-size: 45px;
+  padding: 10px 0 100px;
+}
+
+.hero__arrow {
+  height: 100px;
+}
+
+.projects {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 20;
+  grid-column: 1/21;
+  min-height: 640px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px;
-      grid-template-columns: 300px;
-  -ms-grid-rows: 210px 210px 80px;
-      grid-template-rows: 210px 210px 80px;
-      grid-template-areas: "image" "text" "stats";
-  border-radius: 18px;
-  background: white;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
-  text-align: center;
+  -ms-grid-rows: 200px 100px;
+      grid-template-rows: 200px 100px;
+  background-color: white;
+  font-family: "Orbitron";
 }
 
-.card__image {
+.projects__title {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: image;
-  background: grey;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 75px;
 }
 
-.card__text {
+.projects__languages {
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: text;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
-.card__text h3 {
-  font-size: 2rem;
+.projects__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "RobotoReg";
+  letter-spacing: 2px;
 }
 
-.card__stats {
+.card {
+  height: 500px;
+  width: 350px;
+  border: 1px solid black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr 2fr;
+      grid-template-rows: 1fr 2fr 2fr;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+}
+
+.card__title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.card__thumbnail {
+  height: 100%;
+  background: grey;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 10px;
+}
+
+.card__description {
+  margin: 10px;
   -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+.contact {
   -ms-grid-column: 1;
-  grid-area: stats;
+  -ms-grid-column-span: 20;
+  grid-column: 1/21;
+  height: 1000px;
+  font-family: "Orbitron";
+  letter-spacing: 2px;
+  background-color: #0079b6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+  -ms-grid-rows: 200px 500px 300px;
+      grid-template-rows: 200px 500px 300px;
+  color: white;
+}
+
+.contact__title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 20;
+  grid-column: 1/21;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  font-size: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.contact__hero {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 20;
+  grid-column: 1/21;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.contact__image {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 50%;
+}
+
+.contact__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-family: "RobotoReg";
+  font-size: 36px;
+}
+
+.contact__details {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 20;
+  grid-column: 1/21;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.contact__links {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.contact__linkedin {
+  height: 75px;
+}
+
+.contact__email {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 36px;
 }
 /*# sourceMappingURL=style.css.map */

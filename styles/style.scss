@@ -9,101 +9,250 @@
   src: url("/fonts/Orbitron-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "RobotoReg";
+  src: url("/fonts/Roboto-Regular.ttf");
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
 body {
+  display: grid;
+  min-height: 720px;
+  width: 100%;
+  grid-template-columns: repeat(20, 1fr);
+}
+
+.nav {
+  grid-column: 1/21;
+  height: 100px;
+  background: #020708;
   font-family: "Orbitron";
-  height: 100vh;
-}
 
-.clear {
-  clear: both;
-}
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
 
-h1 {
-  font-size: 2.5rem;
-}
+  letter-spacing: 5px;
 
-h2 {
-  font-size: 3.6rem;
-  padding: 5rem 0rem;
+  background: linear-gradient(rgb(0, 0, 0), rgb(3, 11, 15));
 }
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 2.4rem;
-}
-h3 {
-  font-size: 2.8rem;
-}
-button {
-  font-size: 1.8rem;
-}
+.nav__logo {
+  grid-column: 2/3;
 
-nav {
-  background-color: #02141a;
-  color: white;
-  padding: 3rem;
-}
-nav h1 {
-  float: left;
-}
-nav ul {
-  float: right;
-  list-style: none;
-}
-nav li {
-  float: left;
-  margin: 0rem 3rem;
-}
-
-.hero {
-  background: url("/img/8a4jrOU.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 1080px;
-  text-align: center;
-  color: white;
-  padding-top: 15rem;
-  text-shadow: 3px 3px 3px black;
-}
-.hero button {
-  margin-top: 4rem;
-  padding: 1rem 4rem;
-  background: #0079b6;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.project__cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
+  font-size: 48px;
+  color: white;
+
+  text-decoration: none;
+}
+.nav__btns {
+  grid-column: 12/20;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__btn {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+.nav__btn--contact {
+  height: 30px;
+  width: 140px;
+  padding: 5px 10px;
+  background-color: #0079b6;
+  border-radius: 50px;
 }
 
-.project__card--1 {
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 210px 210px 80px;
-  grid-template-areas: "image" "text" "stats";
+.header {
+  grid-column: 1/21;
+  height: 720px;
+  background: url("/img/8a4jrOU.png");
+  background-position: center;
+  background-size: cover;
 
-  border-radius: 18px;
-  background: white;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 4px;
+}
+.hero {
+  color: white;
+  font-family: "Orbitron";
+
   text-align: center;
+
+  text-shadow: 1px 1px 5px rgb(0, 149, 142);
+}
+.hero__title {
+  font-size: 90px;
+}
+.hero__subtitle {
+  font-size: 45px;
+  padding: 10px 0 100px;
 }
 
-.card__image {
-  grid-area: image;
+.hero__arrow {
+  height: 100px;
+}
 
+.projects {
+  grid-column: 1/21;
+  min-height: 640px;
+
+  display: grid;
+  grid-template-rows: 200px 100px;
+
+  background-color: white;
+
+  font-family: "Orbitron";
+}
+.projects__title {
+  grid-row: 1/2;
+
+  display: flex;
+  justify-self: center;
+  align-self: center;
+
+  font-size: 75px;
+}
+.projects__languages {
+  grid-row: 2/3;
+  height: 75px;
+
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.projects__cards {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+
+  font-family: "RobotoReg";
+  letter-spacing: 2px;
+}
+
+.card {
+  height: 500px;
+  width: 350px;
+  border: 1px solid black;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+.card__title {
+  grid-row: 1/2;
+
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+.card__thumbnail {
+  height: 100%;
   background: grey;
+  grid-row: 2/3;
+  margin: 10px;
 }
-.card__text {
-  grid-area: text;
+.card__description {
+  margin: 10px;
+  grid-row: 3/4;
+  padding-top: 10px;
+
+  font-size: 22px;
 }
-.card__text h3 {
-  font-size: 2rem;
+
+.contact {
+  grid-column: 1/21;
+  height: 1000px;
+
+  font-family: "Orbitron";
+  letter-spacing: 2px;
+
+  background-color: #0079b6;
+
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 200px 500px 300px;
+
+  color: white;
 }
-.card__stats {
-  grid-area: stats;
+.contact__title {
+  grid-column: 1/21;
+  grid-row: 1/2;
+
+  font-size: 64px;
+
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+.contact__hero {
+  grid-column: 1/21;
+  grid-row: 2/3;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contact__image {
+  height: 350px;
+
+  display: flex;
+  justify-self: center;
+  align-self: center;
+
+  border-radius: 50%;
+}
+.contact__about {
+  display: flex;
+
+  justify-self: center;
+  align-self: center;
+
+  font-family: "RobotoReg";
+  font-size: 36px;
+}
+
+.contact__details {
+  grid-column: 1/21;
+  grid-row: 3/4;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.contact__links {
+  grid-row: 1/2;
+
+  display: flex;
+
+  justify-self: center;
+  align-self: center;
+}
+.contact__linkedin {
+  height: 75px;
+}
+.contact__email {
+  grid-row: 2/3;
+
+  display: flex;
+  justify-self: center;
+  align-self: center;
+
+  font-size: 36px;
 }

@@ -7,38 +7,75 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <h1 class="logo">Logo</h1>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="clear"></div>
-      </nav>
-    </header>
-    <section class="hero">
-      <h2>My Portfolio</h2>
-      <h3>[NAME]</h3>
-      <button>Projects</button>
-    </section>
-
-    <section class="projects">
-      <header><h2>Projects</h2></header>
-      <div class="project__cards">
-        <div class="project__card--1">
-          <div class="card__image"></div>
-          <div class="card__text">
-            <h3>Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              magni.
-            </p>
-          </div>
-          <div class="card__stats"></div>
+    <nav class="nav">
+      <a href="/index.html" class="nav__logo">Logo</a>
+      <ul class="nav__btns">
+        <li><a href="" class="nav__btn">Home</a></li>
+        <li><a href="" class="nav__btn">Projects</a></li>
+        <li>
+          <a href="" class=" nav__btn nav__btn--contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header">
+      <div class="hero">
+        <h1 class="hero__title">My Portfolio</h1>
+        <h2 class="hero__subtitle">{NAME}</h2>
+        <a href=""
+          ><img class="hero__arrow" src="./img/./downArrow.png" alt="arrow"
+        /></a>
+      </div>
+    </div>
+    <div class="projects">
+      <h2 class="projects__title">Projects</h2>
+      <img
+        class="projects__languages"
+        src="./img/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png"
+        alt=""
+      />
+      <div class="projects__cards">
+        <div class="card card--1">
+          <h2 class="card__title">Project 1</h2>
+          <a href="" class="card__thumbnail"><img src="" alt=""/></a>
+          <p class="card__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repudiandae, nemo!
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="contact">
+      <div class="contact__title">Contact</div>
+      <div class="contact__hero">
+        <img src="./img/portfolio-image.jpg" class="contact__image" alt="" />
+        <p class="contact__about">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut,
+          commodi!
+        </p>
+      </div>
+
+      <div class="contact__details">
+        <div class="contact__links">
+          <a href=""
+            ><img
+              class="contact__linkedin"
+              src="./img/linkedin-black-style-logo-png-0.png"
+              alt=""
+          /></a>
+          <a href=""><img class="contact__github" src="" alt=""/></a>
+        </div>
+        <p class="contact__email">{Email}</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="/index.html" class="nav__logo">Logo</a>
+      <ul class="nav__btns">
+        <li><a href="" class="nav__btn">Home</a></li>
+        <li><a href="" class="nav__btn">Projects</a></li>
+        <li>
+          <a href="" class=" nav__btn nav__btn--contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
