@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/Orbitron-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Orbitron";
+  height: 100vh;
+}
+
+.clear {
+  clear: both;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  padding: 5rem 0rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+button {
+  font-size: 1.8rem;
+}
+
+nav {
+  background-color: #02141a;
+  color: white;
+  padding: 3rem;
+}
+
+nav h1 {
+  float: left;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  margin: 0rem 3rem;
+}
+
+.hero {
+  background: url("/img/8a4jrOU.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 1080px;
+  text-align: center;
+  color: white;
+  padding-top: 15rem;
+  text-shadow: 3px 3px 3px black;
+}
+
+.hero button {
+  margin-top: 4rem;
+  padding: 1rem 4rem;
+  background: #0079b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.project__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.project__card--1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
+  -ms-grid-rows: 210px 210px 80px;
+      grid-template-rows: 210px 210px 80px;
+      grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: white;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.card__image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  background: grey;
+}
+
+.card__text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+.card__text h3 {
+  font-size: 2rem;
+}
+
+.card__stats {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: stats;
+}
+/*# sourceMappingURL=style.css.map */
