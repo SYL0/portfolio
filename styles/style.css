@@ -116,23 +116,23 @@ body {
   letter-spacing: 4px;
 }
 
-.hero {
+.header .hero {
   color: white;
   font-family: "Orbitron";
   text-align: center;
   text-shadow: 1px 1px 5px #00958e;
 }
 
-.hero__title {
+.header .hero__title {
   font-size: 90px;
 }
 
-.hero__subtitle {
+.header .hero__subtitle {
   font-size: 45px;
   padding: 10px 0 100px;
 }
 
-.hero__arrow {
+.header .hero__arrow {
   height: 100px;
 }
 
@@ -188,7 +188,7 @@ body {
   letter-spacing: 1px;
 }
 
-.card {
+.projects .card {
   height: 500px;
   width: 350px;
   border: 1px solid black;
@@ -201,7 +201,7 @@ body {
           box-shadow: 5px 5px 10px black;
 }
 
-.card__title {
+.projects .card__title {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -215,7 +215,7 @@ body {
   font-size: 36px;
 }
 
-.card__thumbnail {
+.projects .card__thumbnail {
   height: 100%;
   background: grey;
   -ms-grid-row: 2;
@@ -224,7 +224,7 @@ body {
   margin: 10px;
 }
 
-.card__description {
+.projects .card__description {
   margin: 10px;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;

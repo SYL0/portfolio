@@ -38,38 +38,39 @@ body {
   letter-spacing: 3px;
 
   background: linear-gradient(rgb(0, 0, 0), rgb(3, 11, 15));
-}
-.nav__logo {
-  grid-column: 2/3;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__logo {
+    grid-column: 2/3;
 
-  font-size: 48px;
-  color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  text-decoration: none;
-}
-.nav__btns {
-  grid-column: 12/20;
-  list-style-type: none;
+    font-size: 48px;
+    color: white;
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.nav__btn {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-}
-.nav__btn--contact {
-  height: 30px;
-  width: 140px;
-  padding: 5px 10px;
-  background-color: #0079b6;
-  border-radius: 50px;
+    text-decoration: none;
+  }
+  &__btns {
+    grid-column: 12/20;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__btn {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  &__btn--contact {
+    height: 30px;
+    width: 140px;
+    padding: 5px 10px;
+    background-color: #0079b6;
+    border-radius: 50px;
+  }
 }
 
 .header {
@@ -84,25 +85,27 @@ body {
   justify-content: center;
 
   letter-spacing: 4px;
-}
-.hero {
-  color: white;
-  font-family: "Orbitron";
 
-  text-align: center;
+  .hero {
+    color: white;
+    font-family: "Orbitron";
 
-  text-shadow: 1px 1px 5px rgb(0, 149, 142);
-}
-.hero__title {
-  font-size: 90px;
-}
-.hero__subtitle {
-  font-size: 45px;
-  padding: 10px 0 100px;
-}
+    text-align: center;
 
-.hero__arrow {
-  height: 100px;
+    text-shadow: 1px 1px 5px rgb(0, 149, 142);
+
+    &__title {
+      font-size: 90px;
+    }
+    &__subtitle {
+      font-size: 45px;
+      padding: 10px 0 100px;
+    }
+
+    &__arrow {
+      height: 100px;
+    }
+  }
 }
 
 .projects {
@@ -115,69 +118,71 @@ body {
   background-color: white;
 
   font-family: "Orbitron";
-}
-.projects__title {
-  grid-row: 1/2;
 
-  display: flex;
-  justify-self: center;
-  align-self: center;
+  &__title {
+    grid-row: 1/2;
 
-  font-size: 75px;
-}
-.projects__languages {
-  grid-row: 2/3;
-  height: 75px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
 
-  display: flex;
-  justify-self: center;
-  align-self: center;
-}
+    font-size: 75px;
+  }
+  &__languages {
+    grid-row: 2/3;
+    height: 75px;
 
-.projects__cards {
-  display: flex;
-  padding: 50px 0;
-  justify-content: space-around;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
 
-  flex-wrap: wrap;
+  &__cards {
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
 
-  font-family: "RobotoReg";
-  letter-spacing: 1px;
-}
+    flex-wrap: wrap;
 
-.card {
-  height: 500px;
-  width: 350px;
-  border: 1px solid black;
+    font-family: "RobotoReg";
+    letter-spacing: 1px;
+  }
 
-  display: grid;
-  grid-template-rows: 1fr 2fr 2fr;
+  .card {
+    height: 500px;
+    width: 350px;
+    border: 1px solid black;
 
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px black;
-}
-.card__title {
-  grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
 
-  display: flex;
-  justify-self: center;
-  align-self: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
 
-  text-transform: uppercase;
-  font-size: 36px;
-}
-.card__thumbnail {
-  height: 100%;
-  background: grey;
-  grid-row: 2/3;
-  margin: 10px;
-}
-.card__description {
-  margin: 10px;
-  grid-row: 3/4;
-  padding-top: 10px;
+    &__title {
+      grid-row: 1/2;
 
-  font-size: 22px;
+      display: flex;
+      justify-self: center;
+      align-self: center;
+
+      text-transform: uppercase;
+      font-size: 36px;
+    }
+    &__thumbnail {
+      height: 100%;
+      background: grey;
+      grid-row: 2/3;
+      margin: 10px;
+    }
+    &__description {
+      margin: 10px;
+      grid-row: 3/4;
+      padding-top: 10px;
+
+      font-size: 22px;
+    }
+  }
 }
 
 .contact {
@@ -194,70 +199,71 @@ body {
   grid-template-rows: 200px 500px 300px;
 
   color: white;
-}
-.contact__title {
-  grid-column: 1/21;
-  grid-row: 1/2;
 
-  font-size: 64px;
+  &__title {
+    grid-column: 1/21;
+    grid-row: 1/2;
 
-  display: flex;
-  justify-self: center;
-  align-self: center;
-}
-.contact__hero {
-  grid-column: 1/21;
-  grid-row: 2/3;
+    font-size: 64px;
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.contact__image {
-  height: 350px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  &__hero {
+    grid-column: 1/21;
+    grid-row: 2/3;
 
-  display: flex;
-  justify-self: center;
-  align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__image {
+    height: 350px;
 
-  border-radius: 50%;
-}
-.contact__about {
-  display: flex;
+    display: flex;
+    justify-self: center;
+    align-self: center;
 
-  justify-self: center;
-  align-self: center;
+    border-radius: 50%;
+  }
+  &__about {
+    display: flex;
 
-  font-family: "RobotoReg";
-  font-size: 36px;
+    justify-self: center;
+    align-self: center;
 
-  padding: 30px;
-}
+    font-family: "RobotoReg";
+    font-size: 36px;
 
-.contact__details {
-  grid-column: 1/21;
-  grid-row: 3/4;
+    padding: 30px;
+  }
 
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-}
+  &__details {
+    grid-column: 1/21;
+    grid-row: 3/4;
 
-.contact__links {
-  grid-row: 1/2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-  display: flex;
+  &__links {
+    grid-row: 1/2;
 
-  justify-self: center;
-  align-self: center;
-}
-.contact__linkedin {
-  height: 75px;
-}
-.contact__email {
-  grid-row: 2/3;
+    display: flex;
 
-  display: flex;
-  justify-self: center;
-  align-self: center;
+    justify-self: center;
+    align-self: center;
+  }
+  &__linkedin {
+    height: 75px;
+  }
+  &__email {
+    grid-row: 2/3;
 
-  font-size: 36px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 36px;
+  }
 }
