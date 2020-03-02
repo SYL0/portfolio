@@ -120,18 +120,19 @@ body {
 
 .header .hero {
   color: white;
-  font-family: "OswaldReg";
   text-align: center;
   text-shadow: 1px 1px 5px #00958e;
 }
 
 .header .hero__title {
   font-size: 90px;
+  font-family: "OswaldReg";
 }
 
 .header .hero__subtitle {
   font-size: 45px;
   padding: 10px 0 100px;
+  font-family: "OswaldLight";
 }
 
 .header .hero__arrow {
@@ -145,10 +146,10 @@ body {
   min-height: 640px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 200px 100px;
-      grid-template-rows: 200px 100px;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
   background-color: white;
-  font-family: "OswaldReg";
+  font-family: "OswaldLight";
 }
 
 .projects__title {
@@ -185,8 +186,8 @@ body {
 }
 
 .projects__cards .card {
-  height: 500px;
-  width: 350px;
+  height: 450px;
+  width: 300px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 2fr 2fr;
@@ -229,7 +230,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 20;
   grid-column: 1/21;
-  height: 1000px;
+  height: 500px;
   font-family: "OswaldReg";
   letter-spacing: 2px;
   background-color: #0079b6;
@@ -237,8 +238,8 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[20];
       grid-template-columns: repeat(20, 1fr);
-  -ms-grid-rows: 200px 500px 300px;
-      grid-template-rows: 200px 500px 300px;
+  -ms-grid-rows: 2fr 5fr 3fr;
+      grid-template-rows: 2fr 5fr 3fr;
   text-shadow: 1px 1px 1px black;
   color: white;
 }
@@ -273,7 +274,7 @@ body {
 }
 
 .contact__image {
-  height: 350px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,7 +322,7 @@ body {
 }
 
 .contact__linkedin {
-  height: 75px;
+  height: 50px;
 }
 
 .contact__email {
@@ -346,6 +347,9 @@ body {
 }
 
 @media (max-width: 650px) {
+  .header {
+    height: 640px;
+  }
   .nav__btns {
     -ms-grid-column: 5;
     -ms-grid-column-span: 15;
@@ -384,6 +388,9 @@ body {
   }
   .nav__btn {
     font-size: 18px;
+  }
+  .projects__title {
+    font-size: 64px;
   }
   .contact__hero {
     -ms-grid-column: 1;
