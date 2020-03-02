@@ -1,9 +1,25 @@
+$primary-font: "OswaldReg";
+$secondary-font: "OswaldLight";
+
 @font-face {
   font-family: "Orbitron";
   src: url("/fonts/Orbitron-VariableFont_wght.ttf");
 }
 
 @font-face {
-  font-family: "RobotoReg";
+  font-family: "Roboto";
   src: url("/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OswaldReg";
+  src: url("/fonts/static/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: "OswaldLight";
+  src: url("/fonts/static/Oswald-Light.ttf");
+}
+@font-face {
+  font-family: "OswaldReg";
+  src: url("/fonts/static/Oswald-Regular.ttf");
 }
