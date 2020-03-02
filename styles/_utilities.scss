@@ -1,0 +1,21 @@
+/* general things that i don't want to give a dedicated file to 
+e.g. the card will get its own file */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 720px;
+  width: 100%;
+  grid-template-columns: repeat(20, 1fr);
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
