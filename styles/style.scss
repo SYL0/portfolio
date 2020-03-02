@@ -249,7 +249,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 725px) {
   .header {
     height: 640px;
   }
@@ -269,7 +269,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 492px) {
   .nav {
     grid-template-rows: repeat(2, 50px);
 
@@ -292,21 +292,33 @@
     font-size: 64px;
   }
 
+  .contact__title {
+    font-size: 40px;
+  }
   .contact__hero {
     grid-column: 1/21;
     grid-row: 2/3;
 
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
 
   .contact__image {
+    height: 100px;
     grid-column: 1/3;
     grid-row: 1/2;
   }
   .contact__about {
     grid-row: 2/3;
     grid-column: 1/3;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .contact__linkedin {
+    height: 40px;
+  }
+  .contact__email {
+    font-size: 24px;
   }
 }
