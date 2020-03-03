@@ -1,0 +1,70 @@
+.nav {
+  grid-column: 1/21;
+  height: 100px;
+  background: #020708;
+  font-family: $primary-font;
+
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+
+  letter-spacing: 3px;
+
+  background: linear-gradient(rgb(0, 0, 0), rgb(3, 11, 15));
+
+  @media (max-width: 492px) {
+    grid-template-rows: repeat(2, 50px);
+  }
+
+  &__logo {
+    grid-column: 2/3;
+
+    @extend %flex-center;
+
+    font-size: 48px;
+    color: white;
+
+    text-decoration: none;
+
+    @media (max-width: 492px) {
+      grid-column: 1/21;
+      grid-row: 1/2;
+
+      font-size: 36px;
+    }
+  }
+  &__btns {
+    grid-column: 12/20;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 900px) {
+      grid-column: 9/20;
+    }
+    @media (max-width: 725px) {
+      grid-column: 5/20;
+    }
+    @media (max-width: 492px) {
+      grid-row: 2/3;
+      grid-column: 1/21;
+    }
+  }
+  &__btn {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+
+    @media (max-width: 492px) {
+      font-size: 18px;
+    }
+  }
+  &__btn--contact {
+    height: 30px;
+    width: 140px;
+    padding: 5px 10px;
+    background-color: $primary-color;
+    border-radius: 50px;
+  }
+}

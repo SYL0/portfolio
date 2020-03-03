@@ -1,3 +1,9 @@
 // Varibles/Mixins/Functions
 
 $primary-color: #0079b6;
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

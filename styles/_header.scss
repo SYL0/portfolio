@@ -1,0 +1,37 @@
+.header {
+  grid-column: 1/21;
+  height: 720px;
+  background: url("/img/8a4jrOU.png");
+  background-position: center;
+  background-size: cover;
+
+  @extend %flex-center;
+
+  letter-spacing: 4px;
+
+  .hero {
+    color: white;
+
+    text-align: center;
+
+    text-shadow: 1px 1px 5px rgb(0, 149, 142);
+
+    &__title {
+      font-size: 90px;
+      font-family: $primary-font;
+    }
+    &__subtitle {
+      font-size: 45px;
+      padding: 10px 0 100px;
+      font-family: $secondary-font;
+    }
+
+    &__arrow {
+      height: 100px;
+    }
+  }
+
+  @media (max-width: 725px) {
+    height: 640px;
+  }
+}
