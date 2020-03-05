@@ -28,6 +28,8 @@
 
     &__arrow {
       height: 100px;
+
+      @extend %bounce;
     }
   }
 

@@ -5,7 +5,7 @@
   font-family: $primary-font;
   letter-spacing: 2px;
 
-  background-color: $primary-color;
+  background: radial-gradient($primary-color, $dark-primary);
 
   display: grid;
   grid-template-columns: repeat(20, 1fr);

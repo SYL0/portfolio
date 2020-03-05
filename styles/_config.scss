@@ -1,9 +1,28 @@
 // Varibles/Mixins/Functions
 
 $primary-color: #0079b6;
+$dark-primary: darken($primary-color, 20%);
+$light-primary: lighten($primary-color, 20%);
 
 %flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+%bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(5px);
+  }
 }

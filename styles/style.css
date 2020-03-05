@@ -10,6 +10,41 @@
           align-items: center;
 }
 
+.header .hero__arrow {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
 /* general things that i don't want to give a dedicated file to 
 e.g. the card will get its own file */
 * {
@@ -75,6 +110,10 @@ body {
   text-decoration: none;
 }
 
+.nav__logo:hover {
+  text-shadow: 0px 0px 10px #1db3ff;
+}
+
 @media (max-width: 492px) {
   .nav__logo {
     -ms-grid-column: 1;
@@ -133,6 +172,10 @@ body {
   color: white;
   text-decoration: none;
   font-size: 28px;
+}
+
+.nav__btn:hover {
+  text-shadow: 0px 0px 10px #1db3ff;
 }
 
 @media (max-width: 492px) {
@@ -242,6 +285,7 @@ body {
 .projects__cards .card {
   height: 450px;
   width: 300px;
+  margin-bottom: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 2fr 2fr;
@@ -249,7 +293,7 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 10px black;
           box-shadow: 5px 5px 10px black;
-  background: radial-gradient(#0093dd, #004f77);
+  background: radial-gradient(#0079b6, #003550);
   color: white;
   text-shadow: 1px 1px 1px black;
 }
@@ -287,7 +331,7 @@ body {
   height: 750px;
   font-family: "OswaldReg";
   letter-spacing: 2px;
-  background-color: #0079b6;
+  background: radial-gradient(#0079b6, #003550);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[20];
